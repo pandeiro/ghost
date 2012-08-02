@@ -20,7 +20,7 @@ installed](http://casperjs.org/installation.html) already.
      {:verbose true
       :viewportSize {:width 1024 :height 768}
       :pageSetting {:loadImages false
-      		    :userAgent "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/536.11 (KHTML, like Gecko) Lambdarat/23.0.1062.57"}})
+                    :userAgent "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/536.11 (KHTML, like Gecko) Lambdarat/23.0.1062.57"}})
 
     ;; Begin the fun
     (casper/start
