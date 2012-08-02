@@ -17,10 +17,10 @@ installed](http://casperjs.org/installation.html) already.
 
     ;; Totally optional, otherwise a vanilla Casper instance is create()ed for you
     (casper/set-casper-options!
-     {:verbose true, :viewportSize {:width 1024 :height 768}})
-
-    (casper/user-agent
-     "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/536.11 (KHTML, like Gecko) Lambdarat/23.0.1062.57")
+     {:verbose true
+      :viewportSize {:width 1024 :height 768}
+      :pageSetting {:loadImages false
+      		    :userAgent "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/536.11 (KHTML, like Gecko) Lambdarat/23.0.1062.57"}})
 
     ;; Begin the fun
     (casper/start
