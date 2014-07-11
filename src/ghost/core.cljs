@@ -174,6 +174,12 @@
   ([sel f on-timeout] (.waitWhileSelector *casper* (name sel) f on-timeout))
   ([sel f on-timeout time] (.waitWhileSelector *casper* (name sel) f on-timeout time)))
 
+(defn wait-for-popup
+  ([url] (.waitForPopup *casper* url))
+  ([url f] (.waitForPopup *casper* url f))
+  ([url f on-timeout] (.waitForPopup *casper* url f on-timeout))
+  ([url f on-timeout time] (.waitForPopup *casper* url f on-timeout time)))
+
 (defn wait-for-resource
   ([url] (.waitForResource *casper* url))
   ([url f] (.waitForResource *casper* url f))
